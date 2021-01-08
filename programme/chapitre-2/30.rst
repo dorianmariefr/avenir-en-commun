@@ -1,0 +1,20 @@
+:theme: L'urgence sociale
+:chapitre: proteger-et-partager
+:numchapitre: 30
+
+30. Garantir le droit effectif au logement
+-------------------------------------
+
+.. note:: 30 000 enfants vivent sans abri fixe dans notre pays. Près d’un million de personnes n’ont pas de logement personnel, 4 millions sont mal-logées, 12 millions sont menacées d’un problème lié à leur logement. Les loyers s’envolent dans les grandes villes. Le libre-marché et les allègements fiscaux ne permettront pas de régler le problème, au contraire.
+
+Mesure clé : Interdire les expulsions locatives sans relogement
+
+Aller plus loin :
+
+.. admonition:: Mesure
+
+   Construire 200 000 logements publics par an pendant 5 ans aux normes écologiques
+
+.. admonition:: Mesure
+
+   Mettre en place une garantie universelle des loyers

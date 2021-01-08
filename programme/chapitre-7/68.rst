@@ -1,0 +1,20 @@
+68. Affirmer le caractère d’intérêt général de la révolution numérique
+--------------------------------------------------------------------------------------------------
+
+.. note:: La révolution technologique ne doit pas faire peur. Mais elle ne donnera pas le meilleur si on laisse faire les multinationales. C’est un enjeu démocratique, économique et social de premier plan. La technologie doit servir le progrès humain.
+
+Mesure clé : Garantir l’égalité d’accès au numérique sur tout le territoire notamment en accélérant l’achèvement de la couverture du pays en Très haut débit d’ici 2022
+
+Pour aller plus loin :
+
+.. admonition:: Mesure
+
+   Garantir l’application du :abbr:`RGPD (Règlement général sur la protection des données)`, et lutter contre les discriminations entraînées par le traitement algorithmique de données personnelles, en dotant la :abbr:`CNIL (Commission nationale de l'informatique et des libertés)` de moyens de contrôle efficaces
+
+.. admonition:: Mesure
+
+   Systématiser la publication en open data des données publiques détenues par les collectivités
+
+.. admonition:: Mesure
+
+   Garantir que la dématérialisation des services publics et la transformation numérique des administrations ne soit jamais un obstacle à l’accessibilité par les citoyens
