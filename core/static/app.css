@@ -12878,7 +12878,7 @@ ul#side-navigation span.alternate {
 
 .page-toc .jumbotron {
     background-color: #d6402f;
-    background: #d6402f url('/img/fond/photo-l-avenir-en-commun-le-livre.jpg') no-repeat center center fixed;
+    background: #d6402f url('/static/photo-l-avenir-en-commun-le-livre.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
