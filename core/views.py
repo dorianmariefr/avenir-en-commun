@@ -7,3 +7,7 @@ def home(request):
 
 def toc(request):
     return render(request, "toc.html")
+
+
+def chapter(request, n, slug):
+    return render(request, "chapter.html")
