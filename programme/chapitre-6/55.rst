@@ -1,0 +1,25 @@
+:theme: Face à la grande régression
+:chapitre: le-progres-humain-d-abord
+:numchapitre: 55
+:icon: fa-heartbeat
+
+55. Pas d’obstacle aux personnes en situation de handicap
+-----------------------------------------------------
+
+.. note:: La prise en compte du handicap est trop souvent reléguée au second plan ou noyée parmi d’autres thèmes comme la dépendance ou la maladie. Le handicap est d’abord une affaire publique. Celle de la dignité des personnes en situation de handicap, de leur liberté, de l’égalité entre les êtres humains.
+
+Mesure clé : Atteindre enfin l’objectif « 0 obstacles »
+
+Concrètement :
+
+.. admonition:: Mesure
+
+   Tolérance zéro contre les entraves
+
+.. admonition:: Mesure
+
+   Les préfets pourront se substituer aux maires pour imposer les travaux et fermer les bâtiments privés ne respectant pas la loi
+
+.. admonition:: Mesure
+
+   Imposer un plan de mise en accessibilité des transports

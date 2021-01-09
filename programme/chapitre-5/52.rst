@@ -1,0 +1,29 @@
+:theme: La paix en question
+:chapitre: pour-l-independance-de-la-france
+:numchapitre: 52
+:icon: fa-handshake-o
+
+52. Passer à la francophonie politique
+--------------------------------------------------
+
+.. note:: La langue française est la troisième langue la plus parlée au monde. C’est un trésor à faire vivre.
+
+Mesure clé : Défendre l’usage du français dans les institutions internationales
+
+Concrètement :
+
+.. admonition:: Mesure
+
+   Renforcer le réseau des Instituts français et des Alliances françaises
+
+.. admonition:: Mesure
+
+   Créer un Erasmus francophone
+
+.. admonition:: Mesure
+
+   Élaborer des contenus éducatifs et des diplômes communs entre pays francophones
+
+.. admonition:: Mesure
+
+   Renforcer les médias audiovisuels francophones

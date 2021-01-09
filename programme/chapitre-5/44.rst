@@ -1,0 +1,29 @@
+:theme: La paix en question
+:chapitre: pour-l-independance-de-la-france
+:numchapitre: 44
+:icon: fa-handshake-o
+
+44. Instaurer l’indépendance de la France dans le monde
+---------------------------------------------------
+
+.. note:: Les quinquennats Sarkozy, Hollande et Macron ont enfermé la France dans l’:abbr:`OTAN (Organisation du traité de l'Atlantique nord)` et l’ont privée de sa voix. Pour promouvoir la paix et la coopération, retrouver l’indépendance est une nécessité.
+
+Mesure clé : Engager la formation d’une nouvelle alliance altermondialiste
+
+Pour y parvenir :
+
+.. admonition:: Mesure
+
+   Refuser le « choc des civilisations » et la participation de la France à toute alliance militaire permanente hors du cadre de l':abbr:`ONU (Organisation des Nations Unies)`
+
+.. admonition:: Mesure
+
+   Sortir de l':abbr:`OTAN (Organisation du traité de l'Atlantique nord)`, du :abbr:`FMI (Fonds monétaire international)` et de la Banque mondiale
+
+.. admonition:: Mesure
+
+   Stopper l’érosion du réseau diplomatique français et sa mise sous tutelle par l':abbr:`UE (Union européenne)`
+
+.. admonition:: Mesure
+
+   Offrir l’asile aux « combattants de la liberté » tels Edward Snowden et Julian Assange
