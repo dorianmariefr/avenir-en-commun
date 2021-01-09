@@ -1,19 +1,176 @@
+
+
+{% load static %}
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>LAEC.fr</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="p-2 border-b border-gray-300">
-      <div class="max-w-xl mx-auto">
-        <div class="text-2xl font-bold">
-          <span class="text-blue-600">
-            LAEC</span><span class="text-red-600">.fr
-          </span>
-        </div>
+<html class="page js not-logged-in theme-frontend page-index page-aos svg localstorage audio csstransitions document-ready" lang="fr">
+   <!--
+      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+      ░░░█░░░█▀█░█▀▀░█▀▀░░░░█▀▀░█▀▄░░░░
+      ░░░█░░░█▀█░█▀▀░█░░░░░░█▀▀░█▀▄░░░░
+      ░░░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀░░▀░░░▀░▀░░░░
+      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+      +===== L'Avenir En Commun ======+
+      
+      -->
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <!-- Classe .js/.no-js https://www.paulirish.com/2009/avoiding-the-fouc-v3/ -->
+      <script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>LAEC.fr – Le programme de la France Insoumise – L'Avenir En Commun</title>
+      <meta name="description" content="Le programme de la France insoumise en version intégrale">
+      <!-- Icônes et autres -->
+      <link rel="apple-touch-icon-precomposed" href="http://laec.fr/img/application/favicon-152.png">
+      <meta name="msapplication-TileColor" content="#FFFFFF">
+      <meta name="msapplication-TileImage" content="/img/application/favicon-144.png">
+      <meta name="msapplication-tooltip" content="L'Avenir En Commun, le programme de la France Insoumise en ligne">
+      <meta name="msapplication-config" content="/misc/ieconfig.xml">
+      <meta name="application-name" content="LAEC.fr">
+      <!-- Opensearch -->
+      <link rel="search" type="application/opensearchdescription+xml" title="LAEC.fr" href="http://laec.fr/opensearch.xml">
+      <!-- Microdonnées JSON-LD -->
+      <script type="application/ld+json">
+         {
+           "@context"        : "http://schema.org",
+           "@type"           : "WebSite",
+           "url"             : "http://laec.fr/",
+           "potentialAction" : {
+             "@type": "SearchAction",
+             "target": "http://laec.fr/recherche?termes={searchTerms}",
+             "query-input": "required name=searchTerms"
+           }
+         }
+      </script>
+      <!-- Meta social -->
+      <meta property="og:site_name" content="LAEC.fr">
+      <meta property="og:locale" content="fr_FR">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="LAEC.fr – Le programme de la France Insoumise – L'Avenir En Commun">
+      <meta property="og:description" content="Le programme de la France insoumise en version intégrale">
+      <meta property="og:image" content="http://laec.fr/img/social/accueil-laec-fr-l-avenir-en-commun-programme-melenchon-france-insoumise.jpg">
+      <meta property="og:image:width" content="1920">
+      <meta property="og:image:height" content="1008">
+      <meta property="og:url" content="http://laec.fr/">
+      <meta property="fb:app_id" content="secret">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:site" content="@yourtwitterid">
+      <!-- Feuilles de styles -->
+      <link rel="stylesheet" href="/static/app.css">
+      <!--[if lt IE 9]>
+      <script src="/js/static/ie-html5shiv-respond.min.js"></script>
+      <![endif]-->
+      <link rel="icon" type="image/png" href="data:image/png;base64,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">
+   </head>
+   <body id="body" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="0">
+      <div class="visible-print-block text-center print-logotype" aria-hidden="true">
+         <img src="/static/livre-phi-laec-fr-mention-impression.svg" style="max-height: 70px; width: auto;" alt="Logotype l'avenir en commun" data-no-svg-src="/img/logotype/livre-phi-laec-fr-mention-impression.png">
+         <hr>
+         <small>Le programme de la <strong>France insoumise</strong></small>
       </div>
-    </div>
-  </body>
+      <div class="wrap-all-visible">
+         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+               <div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Afficher la navigation</span><i class="fa fa-fw fa-navicon" aria-hidden="true"></i></button><a class="navbar-brand" accesskey="1" title="L'Avenir En Commun, le programme de la France insoumise" rel="home" data-load-display="" href="http://laec.fr/"><img src="/static/laec-fr-couleur-marge-interne.svg" style="max-height: 70px;" data-no-svg-src="/img/logotype/laec-fr-couleur-marge-interne.png" alt="Logotype «&nbsp;l'avenir en commun&nbsp;»"><span class="sr-only">L'avenir en commun</span></a></div>
+               <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                     <li><a title="Qu'est-ce que LAEC.fr&nbsp;? Qui s'en occupe&nbsp;?" data-do-scroll-to="500" href="#a-propos"><i class="fa fa-fw fa-info-circle" aria-hidden="true"></i><span class="hidden-sm"> À propos</span></a></li>
+                     <li><a title="Sommaire complet du programme" data-load-display="" href="http://laec.fr/sommaire"><i class="fa fa-fw fa-list-ul" aria-hidden="true"></i><span class="hidden-sm"> Table des matières</span><span class="visible-sm-inline"> Sommaire</span></a></li>
+                  </ul>
+                  <form action="/recherche" class="navbar-form navbar-right navbar-searchbox-form form-total-loading">
+                     <div class="input-group"><input type="text" id="searchbox" name="termes" autocomplete="off" class="form-control" placeholder="Ex: Partage, écologie…"><span class="input-group-btn"><button type="submit" class="btn btn-default"><span class="sr-only">Rechercher</span><i class="fa fa-fw fa-search" aria-hidden="true"></i></button></span></div>
+                  </form>
+               </div>
+            </div>
+            <div class="flash-group"></div>
+         </nav>
+         <div class="jumbotron jumbotron-massive">
+            <div class="container">
+               <h1 style=""><span class="sr-only">LAEC.fr<br>L'Avenir En Commun</span><img src="/static/livre-phi-laec-fr-mention-blanc-transparence.svg" class="img-content-drop-shadow img-responsive img-responsive-center img-responsive-svg-fix" alt="Logotype «&nbsp;l'Avenir en Commun&nbsp;»" data-no-svg-src="/img/logotype/livre-phi-laec-fr-mention-blanc-transparence.png"></h1>
+               <p class="sidelines"><i class="fa fa-laec" aria-hidden="true"></i></p>
+               <p class="text-center text-balance" style="">Le programme de la <strong>France insoumise</strong></p>
+               <p class="text-center text-small">Version en ligne – Réalisée par des <a href="http://discord-insoumis.fr/" class="external" title="Découvrez le Discord Insoumis et ses nombreuses initiatives…">citoyens insoumis</a></p>
+               <p class="text-center"><a class="btn btn-primary btn-cta btn-lg" data-track-event="Appel à l'action" data-event-action="Consulter" data-event-name="Accueil" href="http://laec.fr/sommaire" data-load-display="" title="Table des matières du programme">
+                  Consulter
+                  <i class="fa fa-fw fa-arrow-right" aria-hidden="true"></i></a>
+               </p>
+               <p class="text-center text-small"><span style="font-size: 85%">Texte © Éditions du Seuil, décembre 2016</span></p>
+               <p class="sidelines"><i class="fa fa-laec" aria-hidden="true"></i></p>
+               <p class="text-center">
+                  Ou continuez pour en savoir plus…
+                  <i class="fa fa-fw fa-arrow-down"></i>
+               </p>
+            </div>
+         </div>
+         <div class="wrap-container-main" id="a-propos" data-track-scroll="Section" data-event-name="À propos">
+            <div class="container">
+               <section class="col-md-10 col-md-offset-1">
+                  <header class="page-header">
+                     <h2>Mais c'est quoi ce site&nbsp;?</h2>
+                  </header>
+                  <div class="row">
+                     <div class="col-md-9 vcenter aos-init" data-aos="fade-right">
+                        <p class="lead"><strong>LAEC.fr</strong> (abréviation de «&nbsp;<strong>L</strong>'<strong>A</strong>venir <strong>E</strong>n <strong>C</strong>ommun&nbsp;»), c'est le texte programme de la <strong>France insoumise</strong> initialement publié en décembre 2016 accessible en ligne de manière simple et claire.
+                        </p>
+                     </div>
+                     <div class="col-md-3 text-center vcenter">
+                        <figure class="illustration aos-init" data-aos="zoom-in" data-aos-delay="400"><img src="/static/livre-phi-couleur-marge-interne.svg" class="img-responsive img-responsive-center img-responsive-svg-fix" alt="Illustration&nbsp;: Livre avec Phi, logotype de LAEC.fr" data-no-svg-src="/img/logotype/livre-phi-couleur-marge-interne.png"></figure>
+                     </div>
+                  </div>
+                  <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-scissors"></i></p>
+                  <p class="lead aos-init" data-aos="fade-right">Vous n'aimez pas <strong>lire sur internet</strong>&nbsp;? Pas de souci, tous les éléments sont référencés avec le <em>numéro de page</em> dans le <a class="external" title="Trouver le livre dans le réseau «&nbsp;les libraires&nbsp;»" href="https://www.leslibraires.fr/livre/9275770-l-avenir-en-commun-le-programme-de-la-france-i--jean-luc-melenchon-le-seuil">livre papier</a>* (toujours disponible en <a class="external" title="«&nbsp;Les libraires&nbsp;», réseau de librairies indépendantes" href="https://www.leslibraires.fr/le_reseau/">librairie</a> au prix de 3&nbsp;€ seulement). Recherchez ici, lisez là-bas.</p>
+                  <p class="text-muted aos-init" data-aos="blur" data-aos-delay="200" data-aos-duration="4000">Dans l'édition de <strong>décembre 2016</strong> du programme <small>(ISBN: <strong>978-2-02-131751-0</strong>)</small></p>
+                  <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-scissors fa-rotate-180"></i></p>
+                  <div class="row">
+                     <div class="col-md-3 text-center vcenter aos-init" data-aos="zoom-in" data-aos-delay="200">
+                        <figure class="illustration"><img src="/static/discuter-partager.svg" class="img-responsive img-responsive-center img-responsive-svg-fix" alt="Illustration&nbsp;: Pouce en l'air, partage et discussion" data-no-svg-src="/img/icone/discuter-partager.png"></figure>
+                     </div>
+                     <div class="col-md-9 vcenter aos-init" data-aos="fade-right" data-aos-delay="400">
+                        <p class="lead"><strong>LAEC.fr</strong>, c'est aussi le moyen pour les convaincus de pouvoir <strong>partager</strong>
+                           facilement chaque élement sur leurs rézosocios préférés en gros comme 
+                           en détail, du chapitre jusqu'à la mesure. Un outil idéal pour répondre 
+                           aux questions que se posent les gens sur le programme&nbsp;!
+                        </p>
+                     </div>
+                  </div>
+                  <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-info-circle"></i></p>
+                  <p class="semi-lead aos-init" data-aos="flip-up" data-aos-delay="400"><strong>LAEC.fr</strong> est le produit d'une initiative indépendante de <a href="http://discord-insoumis.fr/" class="external" title="Découvrez le Discord Insoumis et ses nombreuses initiatives…">citoyens insoumis</a> qui ne sont pas affiliés sous une forme ou une autre avec les <a href="http://www.seuil.com/" class="external" rel="noreferer" title="Site officiel des éditions du Seuil qui publient la version papier de l'Avenir en Commun">éditions du Seuil</a>.</p>
+                  <p class="semi-lead aos-init" data-aos="flip-up" data-aos-delay="500">Leur
+                     objectif est la diffusion maximale du programme et la création d'un 
+                     lieu de partage  aussi bien à destination des militants que du grand 
+                     public.
+                  </p>
+                  <p class="semi-lead aos-init" data-aos="flip-up" data-aos-delay="600">Nous
+                     procédons également à des enrichissements sous la forme de compléments 
+                     d'information (rubriques «&nbsp;Pour aller plus loin&nbsp;», ajouts de 
+                     liens, etc.) dont le contenu n'engage que l'équipe de LAEC.fr, mais pas 
+                     la France Insoumise dans son ensemble.
+                  </p>
+                  <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-laec"></i></p>
+                  <p class="lead text-center aos-init" data-aos="fade-right" data-aos-duration="1700"><a class="btn btn-primary btn-cta btn-lg" data-track-event="Appel à l'action" data-event-action="Consulter" data-event-name="À propos" href="http://laec.fr/sommaire" data-load-display="" title="Table des matières du programme">
+                     Allez c'est parti&nbsp;!
+                     <i class="fa fa-fw fa-arrow-right" aria-hidden="true"></i></a>
+                  </p>
+                  <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-wrench"></i></p>
+                  <p class="text-muted aos-init" data-aos="fade-up" data-aos-delay="300">Le site LAEC.fr a été développé en utilisant le cadriciel <a href="https://symfony.com/" class="external" rel="noreferer" title="Site officiel du cadriciel Symfony, ensemble de composants de base pour le développement PHP à la communauté très active">Symfony</a>. Le moteur de recherche est propulsé par l'excellent <a href="https://www.elastic.co/fr/" class="external" rel="noreferer" title="Site officiel d'ElasticSearch, moteur de recherche libre basé sur Lucene de la fondation Apache">ElasticSearch</a>. Pour sa présentation, le site bénéficie des services de <a href="https://getbootstrap.com/" class="external" rel="noreferer" title="Site officiel du cadriciel Bootstrap, base HTML, CSS et JS complète et customisable à souhait">Bootstrap</a>, de belles icônes fournies par <a href="http://fontawesome.io/" class="external" rel="noreferer" title="Site officiel du kit CSS d'icônes FontAwesome">FontAwesome</a> modifiées et compilées grâce à <a href="https://icomoon.io/" class="external" rel="noreferer" title="Site officiel d'IcoMoon, application de composition et de génération de collection d'icônes utilisables sur le web">IcoMoon</a>.</p>
+               </section>
+            </div>
+         </div>
+         <footer class="footer">
+            <div class="container">
+               <nav class="nav-inline pull-right"><a href="http://laec.fr/page/mentions-legales" title="Mentions legales et politique de confidentialité"><i class="fa fa-fw fa-file-text-o" aria-hidden="true"></i> Mentions<span class="hidden-xs"> légales / Données personnelles</span></a><span class="hidden-xs">·</span><a href="http://laec.fr/contact" title="Contacter LAEC.fr"><i class="fa fa-fw fa-envelope-o" aria-hidden="true"></i> Contact</a><span class="hidden-xs">·</span><a href="http://laec.fr/recherche" title="Rechercher dans L'Avenir En Commun"><i class="fa fa-fw fa-search" aria-hidden="true"></i><span class="hidden-xs"> Recherche</span></a></nav>
+               <p class="text-muted"><small><i class="fa fa-fw fa-coffee" data-special="" style="cursor: help;"></i><span class="hidden-xs"> Site à l'initiative de <a href="http://discord-insoumis.fr/" class="external" title="Découvrez le Discord Insoumis et ses nombreuses initiatives…">citoyens insoumis</a>.</span></small></p>
+            </div>
+         </footer>
+      </div>
+      <div class="total-loading-backdrop">
+         <div class="loading-animation">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+         </div>
+      </div>
+   </body>
 </html>
+
