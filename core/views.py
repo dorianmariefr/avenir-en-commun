@@ -11,3 +11,7 @@ def toc(request):
 
 def chapter(request, n, slug):
     return render(request, "chapter.html")
+
+
+def section(request, n, slug):
+    return render(request, "section.html")
