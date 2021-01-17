@@ -1,58 +1,8 @@
 {% extends 'base.html' %}
 {% block html_class %}page-toc{% endblock %}
 {% block body %}
-
 <body id="body">
-   <div class="visible-print-block text-center print-logotype" aria-hidden="true">
-      <img src="/static/livre-phi-laec-fr-mention-impression.svg" style="max-height: 70px; width: auto;" alt="Logotype l'avenir en commun" data-no-svg-src="/img/logotype/livre-phi-laec-fr-mention-impression.png">
-         <hr>
-            <small>Le programme de la 
-               <strong>France insoumise</strong>
-            </small>
-         </div>
-         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-               <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                     <span class="sr-only">Afficher la navigation</span>
-                     <i class="fa fa-fw fa-navicon" aria-hidden="true"></i>
-                  </button>
-                  <a class="navbar-brand" accesskey="1" title="L'Avenir En Commun, le programme de la France insoumise" rel="home" data-load-display="" href="/">
-                     <img src="/static/laec-fr-couleur-marge-interne.svg" style="max-height: 70px;" data-no-svg-src="/img/logotype/laec-fr-couleur-marge-interne.png" alt="Logotype «&nbsp;l'avenir en commun&nbsp;»">
-                        <span class="sr-only">L'avenir en commun</span>
-                     </a>
-                  </div>
-                  <div id="navbar" class="navbar-collapse collapse">
-                     <ul class="nav navbar-nav">
-                        <li>
-                           <a title="Qu'est-ce que LAEC.fr&nbsp;? Qui s'en occupe&nbsp;?" href="/#a-propos">
-                              <i class="fa fa-fw fa-info-circle" aria-hidden="true"></i>
-                              <span class="hidden-sm"> À propos</span>
-                           </a>
-                        </li>
-                        <li class="active">
-                           <a title="Sommaire complet du programme" data-load-display="" href="/sommaire">
-                              <i class="fa fa-fw fa-list-ul" aria-hidden="true"></i>
-                              <span class="hidden-sm"> Table des matières</span>
-                              <span class="visible-sm-inline"> Sommaire</span>
-                           </a>
-                        </li>
-                     </ul>
-                     <form action="/recherche" class="navbar-form navbar-right navbar-searchbox-form form-total-loading">
-                        <div class="input-group">
-                           <input type="text" id="searchbox" name="termes" autocomplete="off" class="form-control" placeholder="Ex: Partage, écologie…">
-                              <span class="input-group-btn">
-                                 <button type="submit" class="btn btn-default">
-                                    <span class="sr-only">Rechercher</span>
-                                    <i class="fa fa-fw fa-search" aria-hidden="true"></i>
-                                 </button>
-                              </span>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-                  <div class="flash-group"></div>
-               </nav>
+               {% include "_navbar.html" %}
                <div class="jumbotron">
                   <div class="container">
                      <h1 style="">
@@ -138,27 +88,6 @@
                                  <i class="fa fa-fw fa-hand-o-right" aria-hidden="true"></i>
                               </a>
                            </p>
-                           <p class="sidelines" aria-hidden="true">
-                              <i class="fa fa-fw fa-phi"></i>
-                           </p>
-                           <figure class="figure-center">
-                              <img src="/static/couverture-avenir-en-commun-france-insoumise-melenchon.png" alt="Couverture du livre-programme aux publié aux éditions du Seuil" class="img-responsive img-thumbnail">
-                                 <figcaption>© Éditions du Seuil, décembre 2016</figcaption>
-                              </figure>
-                              <p>
-                                 <em>L'Avenir en commun</em>, le programme de la France Insoumise est publié aux 
-                                 <a href="http://www.seuil.com/ouvrage/l-avenir-en-commun-jean-luc-melenchon/9782021317510" class="external" title="Le programme sur le site officiel des éditions du Seuil">éditions du Seuil</a>. Il est disponible à l'achat dans toutes les 
-                                 <a class="external" title="«&nbsp;Les libraires&nbsp;», réseau de librairies indépendantes" href="https://www.leslibraires.fr/le_reseau/">librairies</a> de France au prix de 
-                                 <strong>3&nbsp;€</strong>
-                              </p>
-                              <p>Vous pouvez aussi l'obtenir dans des magasins en lignes tels qu'
-                                 <a href="https://www.amazon.fr/programme-insoumise-candidat-Jean-Luc-M%C3%A9lenchon/dp/202131751X/" class="external">Amazon</a> ou la 
-                                 <a href="http://livre.fnac.com/a9371063/Jean-Luc-Melenchon-L-avenir-en-commun" class="external">Fnac</a>, ou encore le commander via internet chez un 
-                                 <a class="external" title="Trouver « L'Avenir en commun&nbsp;» dans le réseau «&nbsp;les libraires&nbsp;»" href="https://www.leslibraires.fr/livre/9275770-l-avenir-en-commun-le-programme-de-la-france-i--jean-luc-melenchon-le-seuil">libraire indépendant</a> proche de chez vous.
-                              </p>
-                              <p class="sidelines" aria-hidden="true">
-                                 <i class="fa fa-fw fa-phi"></i>
-                              </p>
                            </aside>
                            <article class="col-md-8 col-md-pull-4 main-content-container" id="contenu" role="main">
                               <nav class="toc list-group" role="navigation">
@@ -484,13 +413,6 @@
                                     <span class="label label-default">83</span> Mobiliser le savoir-faire français dans le numérique et le virtuel au service de l'intérêt général 
                                  </a>
                               </nav>
-                              <footer class="footer-list-group">
-                                 <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Mise à jour&nbsp;:
-                  
-                                 <time pubdate="" datetime="2019-09-29T23:26:37+02:00">
-                  dimanche 29 septembre 2019
-                  </time>
-                              </footer>
                            </article>
                         </div>
                         <a href="#body" id="back-to-top" data-do-scroll-to="800" title="Retour en haut de la page" class="">
