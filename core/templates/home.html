@@ -2,11 +2,6 @@
 {% block html_class %}page-index page-aos{% endblock %}
 {% block body %}
 <body id="body" data-aos-easing="ease-out-back" data-aos-duration="1300" data-aos-delay="0">
-    <div class="visible-print-block text-center print-logotype" aria-hidden="true">
-        <img src="/static/livre-phi-laec-fr-mention-impression.svg" style="max-height: 70px; width: auto;" alt="Logotype l'avenir en commun" data-no-svg-src="/img/logotype/livre-phi-laec-fr-mention-impression.png" />
-        <hr />
-        <small>Le programme de la <strong>France insoumise</strong></small>
-    </div>
     <div class="wrap-all-visible">
         {% include "_navbar.html" %}
         <div class="jumbotron jumbotron-massive">
@@ -25,14 +20,14 @@
                 </h1>
                 <p class="sidelines"><i class="fa fa-laec" aria-hidden="true"></i></p>
                 <p class="text-center text-balance" style="">Le programme de la <strong>France insoumise</strong></p>
-                <p class="text-center text-small">Version en ligne – Réalisée par des <a href="http://discord-insoumis.fr/" class="external" title="Découvrez le Discord Insoumis et ses nombreuses initiatives…">citoyens insoumis</a></p>
+                <p class="text-center text-small">Réalisée par des <a href="http://discord-insoumis.fr/" class="external" title="Découvrez le Discord Insoumis et ses nombreuses initiatives…">citoyens insoumis</a></p>
                 <p class="text-center">
                     <a class="btn btn-primary btn-cta btn-lg" data-track-event="Appel à l'action" data-event-action="Consulter" data-event-name="Accueil" href="/sommaire" data-load-display="" title="Table des matières du programme">
                         Consulter
                         <i class="fa fa-fw fa-arrow-right" aria-hidden="true"></i>
                     </a>
                 </p>
-                <p class="text-center text-small"><span style="font-size: 85%;">Texte © Éditions du Seuil, décembre 2016</span></p>
+                <p class="text-center text-small"><span style="font-size: 85%;">Texte de novembre 2020</span></p>
                 <p class="sidelines"><i class="fa fa-laec" aria-hidden="true"></i></p>
                 <p class="text-center">
                     Ou continuez pour en savoir plus…
@@ -50,7 +45,7 @@
                         <div class="col-md-9 vcenter aos-init" data-aos="fade-right">
                             <p class="lead">
                                 <strong>LAEC.fr</strong> (abréviation de «&nbsp;<strong>L</strong>'<strong>A</strong>venir <strong>E</strong>n <strong>C</strong>ommun&nbsp;»), c'est le texte programme de la
-                                <strong>France insoumise</strong> initialement publié en décembre 2016 accessible en ligne de manière simple et claire.
+                                <strong>France insoumise</strong> initialement publié en décembre 2016 et mis à jour en novembre 2020 accessible en ligne de manière simple et claire.
                             </p>
                         </div>
                         <div class="col-md-3 text-center vcenter">
@@ -64,18 +59,6 @@
                             </figure>
                         </div>
                     </div>
-                    <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-scissors"></i></p>
-                    <p class="lead aos-init" data-aos="fade-right">
-                        Vous n'aimez pas <strong>lire sur internet</strong>&nbsp;? Pas de souci, tous les éléments sont référencés avec le <em>numéro de page</em> dans le
-                        <a class="external" title="Trouver le livre dans le réseau «&nbsp;les libraires&nbsp;»" href="https://www.leslibraires.fr/livre/9275770-l-avenir-en-commun-le-programme-de-la-france-i--jean-luc-melenchon-le-seuil">
-                            livre papier
-                        </a>
-                        * (toujours disponible en <a class="external" title="«&nbsp;Les libraires&nbsp;», réseau de librairies indépendantes" href="https://www.leslibraires.fr/le_reseau/">librairie</a> au prix de 3&nbsp;€ seulement).
-                        Recherchez ici, lisez là-bas.
-                    </p>
-                    <p class="text-muted aos-init" data-aos="blur" data-aos-delay="200" data-aos-duration="4000">
-                        Dans l'édition de <strong>décembre 2016</strong> du programme <small>(ISBN: <strong>978-2-02-131751-0</strong>)</small>
-                    </p>
                     <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-scissors fa-rotate-180"></i></p>
                     <div class="row">
                         <div class="col-md-3 text-center vcenter aos-init" data-aos="zoom-in" data-aos-delay="200">
@@ -98,8 +81,7 @@
                     <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-info-circle"></i></p>
                     <p class="semi-lead aos-init" data-aos="flip-up" data-aos-delay="400">
                         <strong>LAEC.fr</strong> est le produit d'une initiative indépendante de
-                        <a href="http://discord-insoumis.fr/" class="external" title="Découvrez le Discord Insoumis et ses nombreuses initiatives…">citoyens insoumis</a> qui ne sont pas affiliés sous une forme ou une autre avec les
-                        <a href="http://www.seuil.com/" class="external" rel="noreferer" title="Site officiel des éditions du Seuil qui publient la version papier de l'Avenir en Commun">éditions du Seuil</a>.
+                        <a href="http://discord-insoumis.fr/" class="external" title="Découvrez le Discord Insoumis et ses nombreuses initiatives…">citoyens insoumis</a>.
                     </p>
                     <p class="semi-lead aos-init" data-aos="flip-up" data-aos-delay="500">
                         Leur objectif est la diffusion maximale du programme et la création d'un lieu de partage aussi bien à destination des militants que du grand public.
@@ -118,9 +100,7 @@
                     <p class="sidelines" aria-hidden="true"><i class="fa fa-fw fa-wrench"></i></p>
                     <p class="text-muted aos-init" data-aos="fade-up" data-aos-delay="300">
                         Le site LAEC.fr a été développé en utilisant le cadriciel
-                        <a href="https://symfony.com/" class="external" rel="noreferer" title="Site officiel du cadriciel Symfony, ensemble de composants de base pour le développement PHP à la communauté très active">Symfony</a>. Le moteur
-                        de recherche est propulsé par l'excellent
-                        <a href="https://www.elastic.co/fr/" class="external" rel="noreferer" title="Site officiel d'ElasticSearch, moteur de recherche libre basé sur Lucene de la fondation Apache">ElasticSearch</a>. Pour sa présentation,
+                        <a href="https://symfony.com/" class="external" rel="noreferer" title="Site officiel du cadriciel Symfony, ensemble de composants de base pour le développement PHP à la communauté très active">Symfony</a> à l'origine mais relancé en <a href="https://www.djangoproject.com/" class="external" rel="noreferer" title="Site officiel du cadriciel Django">Django</a> en 2021. Pour sa présentation,
                         le site bénéficie des services de
                         <a href="https://getbootstrap.com/" class="external" rel="noreferer" title="Site officiel du cadriciel Bootstrap, base HTML, CSS et JS complète et customisable à souhait">Bootstrap</a>, de belles icônes fournies par
                         <a href="http://fontawesome.io/" class="external" rel="noreferer" title="Site officiel du kit CSS d'icônes FontAwesome">FontAwesome</a> modifiées et compilées grâce à
