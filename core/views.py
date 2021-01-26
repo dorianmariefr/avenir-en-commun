@@ -1,5 +1,5 @@
-from pathlib import Path
-from django.shortcuts import render
+from random import choice
+from django.shortcuts import render, redirect
 
 from .models import Chapter, Article
 
@@ -26,3 +26,7 @@ def section(request, n, slug):
     return render(request, "section.html", {
         'article': article
     })
+
+def random(request):
+    article = choice(list(Article.objects.all()))
+    return redirect(f'/section/{article.number}/{article.slug}')
