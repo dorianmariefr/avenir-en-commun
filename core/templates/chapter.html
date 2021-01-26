@@ -8,7 +8,7 @@
     {% include "_navbar.html" %}
     <div class="jumbotron" aria-hidden="true">
         <div class="container">
-            <h1><i class="fa fa-fw fa-pull-right fa-3x fa-phi visible-lg-inline-block visible-md-inline-block"></i><b class="text-balance">[titre_du_chapitre]</b></h1>
+		<h1><i class="fa fa-fw fa-pull-right fa-3x fa-phi visible-lg-inline-block visible-md-inline-block"></i><b class="text-balance">{{chapter.title}}</b></h1>
             <p class="sidelines"><i class="fa fa-phi"></i></p>
             <a rel="contents" data-load-display href="/sommaire" title="Retour au sommaire"><i class="fa fa-arrow-left"></i><span class="hidden-xs"> Table des matières</span></a>
         </div>
@@ -101,7 +101,7 @@
                     <hr />
                     <section class="content-text parsedown">
                         <div class="subject-body">
-                            {{ content|safe }}
+                            {{ chapter.content|safe }}
                         </div>
                     </section>
                 </article>
