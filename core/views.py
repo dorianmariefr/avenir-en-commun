@@ -27,6 +27,16 @@ def section(request, n, slug):
         'article': article
     })
 
+
 def random(request):
     article = choice(list(Article.objects.all()))
     return redirect(f'/section/{article.number}/{article.slug}')
+
+
+def search(request):
+    q = request.GET.get("termes")
+    articles = Article.objects.filter(content__contains=q)
+    return render(request, "search.html", {
+        'articles': articles
+    })
+

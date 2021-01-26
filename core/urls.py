@@ -7,4 +7,5 @@ urlpatterns = [
     path('chapitre/<slug:n>/<slug:slug>', views.chapter),
     path('section/<slug:n>/<slug:slug>', views.section),
     path('hasard', views.random),
+    path('recherche', views.search),
 ]
