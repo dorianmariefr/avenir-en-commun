@@ -17,7 +17,7 @@ class Command(BaseCommand):
                 number=file.split('chapitre-')[1].split('/')[0],
                 slug=slugify(title),
                 title=title,
-                content=open(file).read(),
+                content='\n'.join(open(file).read().split('\n')[1:]),
             ).save()
 
 
@@ -31,6 +31,6 @@ class Command(BaseCommand):
                 number=int(file.split('/')[-1].replace('.md', '')),
                 slug=slugify(title),
                 title=title,
-                content=open(file).read(),
+                content='\n'.join(open(file).read().split('\n')[1:]),
                 chapter=chapter,
             ).save()

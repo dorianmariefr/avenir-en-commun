@@ -1,5 +1,7 @@
 from random import choice
+
 from django.shortcuts import render, redirect
+import markdown
 
 from .models import Chapter, Article
 
@@ -17,14 +19,16 @@ def toc(request):
 def chapter(request, n, slug):
     chapter = Chapter.objects.get(number=n)
     return render(request, "chapter.html", {
-        'chapter': chapter
+        'chapter': chapter,
+        'content': markdown.Markdown().convert(chapter.content),
     })
 
 
 def section(request, n, slug):
     article = Article.objects.get(number=n)
     return render(request, "section.html", {
-        'article': article
+        'article': article,
+        'content': markdown.Markdown().convert(article.content),
     })
 
 
