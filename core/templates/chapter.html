@@ -16,24 +16,7 @@
     <div class="wrap-container-main">
         <div class="container container-main">
             <div class="row">
-                <aside class="col-md-4 col-md-push-8 aside-content-container">
-                    <a href="#contenu" id="scroll-to-contents" class="visible-xs-block visible-sm-block" data-do-scroll-to="300">Aller au texte</a>
-                    <ul role="navigation" id="side-navigation">
-                        <li>
-                            <a title="Consulter une section du programme au hasard" data-load-display href="/hasard"><i class="fa fa-fw fa-random" aria-hidden="true"></i> Au hasard !</a>
-                        </li>
-                        <li class="heading">
-                            <span><i class="fa fa-fw fa-laec" aria-hidden="true"></i> Plan du livre</span>
-                        </li>
-                        <li>
-                            <label>Chapitre suivant</label>
-                            <a href="/chapitre/p/un-programme-en-evolution-permanente" rel="next" title="Chapitre suivant" data-load-display><i class="fa fa-fw fa-arrow-right" aria-hidden="true"></i>Un programme en évolution permanente</a>
-                        </li>
-                        <li>
-                            <label>Retour au sommaire</label><a href="/sommaire" rel="contents" title="Retour au sommaire" data-load-display><i class="fa fa-fw fa-list-ul" aria-hidden="true"></i>Table des matières</a>
-                        </li>
-                    </ul>
-                </aside>
+                {% include '_footer.html' %}
                 <article class="col-md-8 col-md-pull-4 main-content-container" id="contenu" role="main">
                     <section class="actions actions-c">
                         <div class="btn-toolbar" role="toolbar" aria-label="Actions disponibles pour ce chapitre">

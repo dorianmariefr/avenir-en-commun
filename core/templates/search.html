@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
 <body id="body">
-               {% include "_navbar.html" %}
-
+         {% include "_navbar.html" %}
 	       <ul>
 	       {% for article in articles %}
 	       <li>{{ article.title }}</li>
