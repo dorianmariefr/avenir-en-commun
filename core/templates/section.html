@@ -15,9 +15,8 @@
       <div class="jumbotron" aria-hidden="true">
          <div class="container">
             <h1>
-               <span class="number">[num]</span>
-               <span class="alternate">[sous-titre]</span>
-               <b class="text-balance">[titre]</b>
+               <span class="number">{{article.number}}</span>
+               <b class="text-balance">{{article.title}}</b>
             </h1>
             <p class="sidelines">
                <i class="fa fa-institution"></i>
@@ -129,7 +128,7 @@
                                  </div>
                               </div>
                            </div>
-               {{ content|safe }}
+               {{ article.content|safe }}
                                  <hr>
                                     <p class="text-muted text-left campaign-support">Vous approuvez et souhaitez voir cette section 
                                        <strong>appliquée</strong>&nbsp;? Alors aidez la 

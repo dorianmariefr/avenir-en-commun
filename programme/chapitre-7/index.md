@@ -1,18 +1,4 @@
-theme
-
-:   Face au déclinisme
-
-chapitre
-
-:   la-france-aux-frontieres-de-l-humanite
-
-icon
-
-:   fa-rocket
-
-  --------------------------------------------------------------------------------
-  Chapitre 7 : Face au déclinisme, porter la France aux frontières de l’Humanité
-  --------------------------------------------------------------------------------
+# Face au déclinisme, porter la France aux frontières de l’Humanité
 
 La mer, l'espace, le monde du numérique et du virtuel sont les nouvelles
 frontières de l'humanité. Les Français excellent dans ces domaines

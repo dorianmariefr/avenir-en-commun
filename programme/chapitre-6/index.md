@@ -1,18 +1,4 @@
-theme
-
-:   Face à la grande régression
-
-chapitre
-
-:   le-progres-humain-d-abord
-
-icon
-
-:   fa-heartbeat
-
-  --------------------------------------------------------------------------------
-  Chapitre 6 : Face à la grande régression, choisir l’objectif du progrès humain
-  --------------------------------------------------------------------------------
+# Face à la grande régression, choisir l’objectif du progrès humain
 
 Seuls le cours de bourse et le taux de profit intéressent l'oligarchie.
 Et les êtres humains ? Mieux vaudrait atteindre de nouveaux progrès

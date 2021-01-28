@@ -1,18 +1,4 @@
-theme
-
-:   L'urgence écologique
-
-chapitre
-
-:   la-planification-ecologique
-
-icon
-
-:   fa-leaf
-
-  ----------------------------------------------------------------------
-  Chapitre 3 : Face à la crise climatique, la planification écologique
-  ----------------------------------------------------------------------
+# Face à la crise climatique, la planification écologique
 
 Le changement climatique a commencé et s'accélère. Il menace de détruire
 le seul écosystème compatible avec la vie humaine. Comment empêcher la

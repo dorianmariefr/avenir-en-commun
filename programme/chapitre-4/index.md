@@ -1,18 +1,4 @@
-theme
-
-:   L'Europe en question
-
-chapitre
-
-:   sortir-des-traites-europeens
-
-icon
-
-:   fa-star-half-o
-
-  -----------------------------------------------------------------------
-  Chapitre 4 : Face à la crise européenne, sortir des traités européens
-  -----------------------------------------------------------------------
+# Face à la crise européenne, sortir des traités européens
 
 L'Europe de nos rêves est morte. L'Union actuelle est seulement un
 marché unique et les peuples sont soumis à la dictature des banques et

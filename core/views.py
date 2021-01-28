@@ -35,7 +35,7 @@ def random(request):
 
 def search(request):
     q = request.GET.get("termes")
-    articles = Article.objects.filter(content__contains=q)
+    articles = Article.objects.filter(content__icontains=q)
     return render(request, "search.html", {
         'articles': articles
     })

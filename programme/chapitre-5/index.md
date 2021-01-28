@@ -1,18 +1,4 @@
-theme
-
-:   La paix en question
-
-chapitre
-
-:   pour-l-independance-de-la-france
-
-icon
-
-:   fa-handshake-o
-
-  --------------------------------------------------------------------------------------------
-  Chapitre 5 : Face à la guerre, instaurer l’indépendance de la France au service de la paix
-  --------------------------------------------------------------------------------------------
+# Face à la guerre, instaurer l’indépendance de la France au service de la paix
 
 L'armée française est engagée dans un nombre sans précédent de conflits
 armés. Comment sortir de la logique de guerre ? Comment restaurer

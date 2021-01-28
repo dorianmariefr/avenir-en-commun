@@ -1,18 +1,4 @@
-theme
-
-:   L'urgence sociale
-
-chapitre
-
-:   proteger-et-partager
-
-icon
-
-:   fa-balance-scale
-
-  -------------------------------------------------------------------------------------------------------
-  Chapitre 2 : Face au chômage et à l’urgence sociale, partager les richesses, mettre au pas la finance
-  -------------------------------------------------------------------------------------------------------
+# Face au chômage et à l’urgence sociale, partager les richesses, mettre au pas la finance
 
 La France est le pays d'Europe qui compte le plus de millionnaires (plus
 de deux millions de personnes). Conséquences : la pauvreté gagne du
